@@ -13,7 +13,7 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-SignalZen module contains third-party integration of SignalZen live chat solution.
+SignalZen module contains third-party integration of SignalZen (https://signalzen.com/) live chat solution.
 
  - For a full description of the module visit:
    https://www.drupal.org/project/signalzen
