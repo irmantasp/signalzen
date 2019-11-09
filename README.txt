@@ -39,6 +39,14 @@ INSTALLATION
    Drupal module. Visit https://www.drupal.org/node/1897420 for further
    information.
 
+CONFIGURATION
+-------------
+
+ - Add Public token for chat to work properly.
+
+ - Intitial configuration colors for what widget are provided by module,
+   you can change them later to your liking.
+
 Author/Maintainers
 ------------------
 
