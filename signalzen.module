@@ -24,6 +24,8 @@ function signalzen_help($route_name, RouteMatchInterface $route_match) {
 
 /**
  * Implements hook_page_attachments_alter().
+ *
+ * Attach SignalZen live chat javascript libraries and initialize widget.
  */
 function signalzen_page_attachments_alter(array &$attachments) {
   /** @var \Drupal\signalzen\SignalZenWidgetManagerInterface $widget_manager */
