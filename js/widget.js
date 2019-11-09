@@ -1,5 +1,6 @@
 /**
  * @file
+ * SignalZen live chat widget behaviors.
  */
 
 (function ($, Drupal, drupalSettings) {
