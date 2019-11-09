@@ -23,11 +23,11 @@ function signalzen_help($route_name, RouteMatchInterface $route_match) {
       $output .= '<h3>' . t('Integration with your website') . '</h3>';
       $output .= '<p>' . t('This Wordpress plugin should make the integration with SignalZen incredibly easy and fast.');
       $output .= '<br />';
-      $output .= t('However, before proceeding, make sure you have <a href=":signup" target="_blank">setup an account</a>.', [':signup' => 'https://portal.signalzen.com/sign-up']) .'</p>';
+      $output .= t('However, before proceeding, make sure you have <a href=":signup" target="_blank">setup an account</a>.', [':signup' => 'https://portal.signalzen.com/sign-up']) . '</p>';
       $output .= '<p>' . t('To enable SignalZen chat widget on your website, you just need to enter your <strong>Public Token</strong> which you can find in the <strong>Integration page</strong> while logged in to your account at <a href=":homepage" target="_blank">signalzen.com</a>.', [':homepage' => 'https://signalzen.com/']);
-      $output .='<br />';
+      $output .= '<br />';
       $output .= t('Once you enter your Public Token here and submit the form, your website will contain our live chat widget and you can start talking to them by using our portal or <a href=":slack" target="_blank">Slack</a> if you choose to integrate with it also.', [':slack' => 'https://slack.com']) . '</p>';
-      $output .='<p>Happy chatting!</p>';
+      $output .= '<p>Happy chatting!</p>';
       return $output;
 
     default:

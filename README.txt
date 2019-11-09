@@ -13,7 +13,10 @@ CONTENTS OF THIS FILE
 INTRODUCTION
 ------------
 
-SignalZen module contains third-party integration of SignalZen (https://signalzen.com/) live chat solution.
+SignalZen module contains third-party integration of SignalZen live chat.
+
+ - For more information about SignalZen please visit:
+   https://signalzen.com
 
  - For a full description of the module visit:
    https://www.drupal.org/project/signalzen
@@ -25,18 +28,18 @@ SignalZen module contains third-party integration of SignalZen (https://signalze
 REQUIREMENTS
 ------------
 
-This module depends on external javascript providing SignalZen live chat solution:
-https://cdn.signalzen.com/signalzen.js
+This module depends on external javascript providing SignalZen live
+chat solution: https://cdn.signalzen.com/signalzen.js
 
 
 INSTALLATION
 ------------
 
- - Install the SignalZen module as you would normally install a contributed Drupal
-   module. Visit https://www.drupal.org/node/1897420 for further information.
+ - Install the SignalZen module as you would normally install a contributed
+   Drupal module. Visit https://www.drupal.org/node/1897420 for further
+   information.
 
 Author/Maintainers
 ------------------
 
  - Irmantas Puodžiukas (irmantasp) - https://www.drupal.org/u/irmantasp
-
