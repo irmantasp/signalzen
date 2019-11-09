@@ -3,82 +3,82 @@ signalzen.settings:
   label: 'SignalZen live chat'
   mapping:
     public_token_field:
-      type: string
+      type: label
       label: 'Public token'
     color_primary:
-      type: string
+      type: label
       label: 'Primary color'
     color_secondary:
-      type: string
+      type: label
       label: 'Secondary color'
     color_footer:
-      type: string
+      type: label
       label: 'Footer color'
     color_error:
-      type: string
+      type: label
       label: 'Error color'
     color_popup:
-      type: string
+      type: label
       label: 'Popup color'
     color_popup_close:
-      type: string
+      type: label
       label: 'Popup close color'
     color_popup_close_symbol:
-      type: string
+      type: label
       label: 'Popup close symbol color'
     color_popup_form_input_border:
-      type: string
+      type: label
       label: 'Popup form input color'
     color_badge:
-      type: string
+      type: label
       label: 'Badge color'
     color_footer_emojis_popup:
-      type: string
+      type: label
       label: 'Footer emojis background color'
     color_footer_options:
-      type: string
+      type: label
       label: 'Footer options color'
     color_operator_messages:
-      type: string
+      type: label
       label: 'Operator messages background color'
     color_form_input:
-      type: string
+      type: label
       label: 'Form input color'
     color_form_input_border:
-      type: string
+      type: label
       label: 'Form input border color'
     color_form_button:
-      type: string
+      type: label
       label: 'Form button background color'
     color_form_placeholder:
-      type: string
+      type: label
       label: 'Form input placeholder color'
     color_text_primary:
-      type: string
+      type: label
       label: 'Text primary color'
     color_text_error:
-      type: string
+      type: label
       label: 'Error text color'
     color_text_time:
-      type: string
+      type: label
       label: 'Time text color'
     color_text_time_separator:
-      type: string
+      type: label
       label: 'Time separator text color'
     color_text_user_message:
-      type: string
+      type: label
       label: 'User message text color'
     color_text_form_text:
-      type: string
+      type: label
       label: 'Form text input color'
     color_text_form_input:
-      type: string
+      type: label
       label: 'Form text color'
     color_text_form_title:
-      type: string
+      type: label
       label: 'Form text title color'
     color_text_form_button:
-      type: string
+      type: label
       label: 'Form button text color'
     admin_routes:
       type: boolean
