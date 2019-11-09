@@ -5,4 +5,4 @@ administer signalzen live chat configuration:
 use signalzen live chat:
   title: 'Use SignalZen live chat'
   description: 'Allow use of Signal live chat widget'
-  restrict access: true
+  restrict access: false

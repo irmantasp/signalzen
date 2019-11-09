@@ -23,3 +23,4 @@ color_text_form_text: '#000000'
 color_text_form_input: '#000000'
 color_text_form_title: '#8e9192'
 color_text_form_button: '#ffffff'
+admin_routes: false

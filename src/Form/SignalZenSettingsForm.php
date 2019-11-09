@@ -80,14 +80,30 @@ class SignalZenSettingsForm extends ConfigFormBase {
       '#required' => TRUE,
     ];
 
+    $form['colors'] = [
+      '#type' => 'details',
+      '#title' => $this->t('Colors config'),
+    ];
+
     foreach ($this->getEditableColorConfigNames() as $color_config => $color_config_name) {
-      $form[$color_config] = [
+      $form['colors'][$color_config] = [
         '#type' => 'color',
         '#title' => $color_config_name,
         '#default_value' => $config->get($color_config),
         '#required' => TRUE,
       ];
     }
+
+    $form['display'] = [
+      '#type' => 'details',
+      '#title' => $this->t('Display settings'),
+    ];
+
+    $form['display']['admin_routes'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Display on administration pages?'),
+      '#default_value' => $config->get('admin_routes'),
+    ];
 
     return parent::buildForm($form, $form_state);
   }

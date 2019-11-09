@@ -29,6 +29,8 @@ function signalzen_page_attachments_alter(array &$attachments) {
   /** @var \Drupal\signalzen\SignalZenWidgetManagerInterface $widget_manager */
   $widget_manager = \Drupal::service('signalzen.widget.manager');
 
-  $attachments['#attached']['drupalSettings']['signalZen'] = $widget_manager->getWidgetConfiguration();
-  $attachments['#attached']['library'][] = 'signalzen/widget';
+  if ($widget_manager->canUserUseWidget() && $widget_manager->displayOnRoute()) {
+    $attachments['#attached']['drupalSettings']['signalZen'] = $widget_manager->getWidgetConfiguration();
+    $attachments['#attached']['library'][] = 'signalzen/widget';
+  }
 }
