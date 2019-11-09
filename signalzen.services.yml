@@ -1,0 +1,9 @@
+services:
+  logger.channel.signalzen:
+    parent: logger.channel_base
+    arguments:
+      - 'signalzen'
+  signalzen.widget.manager:
+    class: Drupal\signalzen\SignalZenWidgetManager
+    arguments:
+      - '@config.factory'

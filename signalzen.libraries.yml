@@ -1,0 +1,10 @@
+widget:
+  version: 1.x
+  js:
+    https://cdn.signalzen.com/signalzen.js: { type: external, minified: true, async: true}
+    js/widget.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

@@ -21,3 +21,14 @@ function signalzen_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function signalzen_page_attachments_alter(array &$attachments) {
+  /** @var \Drupal\signalzen\SignalZenWidgetManagerInterface $widget_manager */
+  $widget_manager = \Drupal::service('signalzen.widget.manager');
+
+  $attachments['#attached']['drupalSettings']['signalZen'] = $widget_manager->getWidgetConfiguration();
+  $attachments['#attached']['library'][] = 'signalzen/widget';
+}

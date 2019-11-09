@@ -7,76 +7,76 @@ signalzen.settings:
       label: 'Public token'
     color_primary:
       type: string
-        label: 'Primary color'
+      label: 'Primary color'
     color_secondary:
       type: string
-        label: 'Secondary color'
+      label: 'Secondary color'
     color_footer:
       type: string
-        label: 'Footer color'
+      label: 'Footer color'
     color_error:
       type: string
-        label: 'Error color'
+      label: 'Error color'
     color_popup:
       type: string
-        label: 'Popup color'
+      label: 'Popup color'
     color_popup_close:
       type: string
-        label: 'Popup close color'
+      label: 'Popup close color'
     color_popup_close_symbol:
       type: string
-        label: 'Popup close symbol color'
+      label: 'Popup close symbol color'
     color_popup_form_input_border:
       type: string
-        label: 'Popup form input color'
+      label: 'Popup form input color'
     color_badge:
       type: string
-        label: 'Badge color'
+      label: 'Badge color'
     color_footer_emojis_popup:
       type: string
-        label: 'Footer emojis background color'
+      label: 'Footer emojis background color'
     color_footer_options:
       type: string
-        label: 'Footer options color'
+      label: 'Footer options color'
     color_operator_messages:
       type: string
-        label: 'Operator messages background color'
+      label: 'Operator messages background color'
     color_form_input:
       type: string
-        label: 'Form input color'
+      label: 'Form input color'
     color_form_input_border:
       type: string
-        label: 'Form input border color'
+      label: 'Form input border color'
     color_form_button:
       type: string
-        label: 'Form button background color'
+      label: 'Form button background color'
     color_form_placeholder:
       type: string
-        label: 'Form input placeholder color'
+      label: 'Form input placeholder color'
     color_text_primary:
       type: string
-        label: 'Text primary color'
+      label: 'Text primary color'
     color_text_error:
       type: string
-        label: 'Error text color'
+      label: 'Error text color'
     color_text_time:
       type: string
-        label: 'Time text color'
+      label: 'Time text color'
     color_text_time_separator:
       type: string
-        label: 'Time separator text color'
+      label: 'Time separator text color'
     color_text_user_message:
       type: string
-        label: 'User message text color'
+      label: 'User message text color'
     color_text_form_text:
       type: string
-        label: 'Form text input color'
+      label: 'Form text input color'
     color_text_form_input:
       type: string
-        label: 'Form text color'
+      label: 'Form text color'
     color_text_form_title:
       type: string
-        label: 'Form text title color'
+      label: 'Form text title color'
     color_text_form_button:
       type: string
-        label: 'Form button text color'
+      label: 'Form button text color'
