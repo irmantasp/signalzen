@@ -1,0 +1,8 @@
+administer signalzen live chat configuration:
+  title: 'Administer SignalZen live chat configuration'
+  description: 'Allow configuring SignalZen live chat visibility and display settings'
+  restrict access: true
+use signalzen live chat:
+  title: 'Use SignalZen live chat'
+  description: 'Allow use of Signal live chat widget'
+  restrict access: true

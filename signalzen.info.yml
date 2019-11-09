@@ -1,0 +1,5 @@
+name: 'SignalZen'
+type: module
+description: 'This module provides configurable SignalZen live chat widget'
+core: 8.x
+configure: signalzen.settings

@@ -1,0 +1,9 @@
+signalzen.settings:
+  path: '/admin/config/services/signalzen'
+  defaults:
+    _form: '\Drupal\signalzen\Form\SignalZenSettingsForm'
+    _title: 'SignalZen live chat'
+  requirements:
+    _permission: 'administer signalzen live chat configuration'
+  options:
+    _admin_route: TRUE

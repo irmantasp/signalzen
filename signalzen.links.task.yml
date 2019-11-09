@@ -1,0 +1,4 @@
+signalzen.settings_tab:
+  route_name: signalzen.settings
+  title: 'SignalZen live chat'
+  base_route: signalzen.settings
