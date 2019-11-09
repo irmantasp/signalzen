@@ -5,15 +5,17 @@
 
 (function ($, Drupal, drupalSettings) {
 
+  'use strict';
+
   let initialized;
 
   Drupal.behaviors.signalZen = {
     attach: function attach(context, settings) {
-      this.init(context,settings);
+      this.init(context, settings);
     },
     init: function init(context, settings) {
       if (!initialized) {
-        if (settings.signalZen.token !== undefined && settings.signalZen.colors !== undefined) {
+        if (settings.signalZen.token !== 'undefined' && settings.signalZen.colors !== 'undefined') {
           window.paceOptions = {
             ajax: {
               trackWebSockets: false,
