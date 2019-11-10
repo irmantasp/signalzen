@@ -78,7 +78,7 @@ class SignalZenSettingsForm extends ConfigFormBase {
       '#title' => $this->t('Public Token'),
       '#default_value' => $config->get('public_token_field'),
       '#required' => TRUE,
-      '#description' => t('To enable SignalZen chat widget on your website, you just need to enter your <strong>Public Token</strong> which you can find in the <strong>Integration page</strong> while logged in to your account at <a href=":homepage" target="_blank">signalzen.com</a>.', [':homepage' => 'https://signalzen.com/']),
+      '#description' => $this->t('To enable SignalZen chat widget on your website, you just need to enter your <strong>Public Token</strong> which you can find in the <strong>Integration page</strong> while logged in to your account at <a href=":homepage" target="_blank">signalzen.com</a>.', [':homepage' => 'https://signalzen.com/']),
     ];
 
     $form['colors'] = [
