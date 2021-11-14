@@ -73,7 +73,7 @@ class SignalZenSettingsForm extends ConfigFormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state): array {
     $config = $this->config(static::CONFIG_NAME);
-
+    $form['#attributes'] = array('enctype' => 'multipart/form-data');
     $form['public_token_field'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Public Token'),
@@ -126,6 +126,47 @@ class SignalZenSettingsForm extends ConfigFormBase {
       '#type' => 'number',
       '#title' => 'Vertical offset (px)',
       '#default_value' => $config->get('vertical_offset'),
+    ];
+
+    $form['chat_icon'] = [
+      '#type' => 'details',
+      '#title' => $this->t('Chat Icon config'),
+    ];
+
+    $form['chat_icon']['chat_icon_enabled'] = [
+      '#type' => 'checkbox',
+      '#title' => 'Custom Chat Icon enabled',
+      '#default_value' => $config->get('chat_icon_enabled'),
+    ];
+
+    $form['chat_icon']['chat_icon_width'] = [
+      '#type' => 'number',
+      '#title' => 'Custom Chat Icon width (px)',
+      '#default_value' => $config->get('chat_icon_width'),
+    ];
+
+    $form['chat_icon']['chat_icon_height'] = [
+      '#type' => 'number',
+      '#title' => 'Custom Chat Icon height (px)',
+      '#default_value' => $config->get('chat_icon_height'),
+    ];
+
+    $form['chat_icon']['chat_icon_closed'] = [
+      '#type' => 'managed_file',
+      '#title' => 'Custom Chat Icon image (when chat is closed)',
+      '#default_value' => $config->get('chat_icon_closed'),
+    ];
+
+    $form['chat_icon']['chat_icon_open'] = [
+      '#type' => 'managed_file',
+      '#title' => 'Custom Chat Icon image (when chat is open)',
+      '#default_value' => $config->get('chat_icon_open'),
+    ];
+
+    $form['chat_icon']['chat_icon_loading'] = [
+      '#type' => 'managed_file',
+      '#title' => 'Custom Chat Icon image (when chat is loading)',
+      '#default_value' => $config->get('chat_icon_loading'),
     ];
 
     $form['display'] = [
