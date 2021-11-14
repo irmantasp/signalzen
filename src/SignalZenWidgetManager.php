@@ -7,6 +7,7 @@ use Drupal\Core\Routing\AdminContext;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Session\AccountProxyInterface;
 use Drupal\signalzen\Form\SignalZenSettingsForm;
+use Drupal\file\Entity\File;
 
 /**
  * Provides helper functions for SignalZen live chat widget.
@@ -92,6 +93,8 @@ class SignalZenWidgetManager implements SignalZenWidgetManagerInterface {
     return [
       'token' => $this->getPublicToken(),
       'colors' => $this->getWidgetColors(),
+      'layout' => $this->getWidgetLayout(),
+      'chatIcon' => $this->getWidgetChatIcon()
     ];
   }
 
@@ -126,6 +129,41 @@ class SignalZenWidgetManager implements SignalZenWidgetManagerInterface {
     }
 
     return $widget_colors;
+  }
+
+  /**
+   * Get layout for widget.
+   *
+   * @return array
+   *   Contains list of layout values.
+   */
+  public function getWidgetLayout() {
+    $layout = array();
+    if (!empty($this->widgetConfig->get('horizontal_position'))) {
+      $layout['horizontalPosition'] = $this->widgetConfig->get('horizontal_position');
+    }
+    if (!empty($this->widgetConfig->get('vertical_position'))) {
+      $layout['verticalPosition'] = $this->widgetConfig->get('vertical_position');
+    }
+    if (!empty($this->widgetConfig->get('vertical_offset'))) {
+      $layout['verticalOffset'] = intval($this->widgetConfig->get('vertical_offset'));
+    }
+    if (!empty($this->widgetConfig->get('horizontal_offset'))) {
+      $layout['horizontalOffset'] = intval($this->widgetConfig->get('horizontal_offset'));
+    }
+    return $layout;
+  }
+
+  public function getWidgetChatIcon() {
+    $chat_icon = array();
+    if ($this->widgetConfig->get('chat_icon_enabled') == "1") {
+      $chat_icon['width'] = intval($this->widgetConfig->get('chat_icon_width'));
+      $chat_icon['height'] = intval($this->widgetConfig->get('chat_icon_height'));
+      $chat_icon['open'] = file_create_url(File::load(reset($this->widgetConfig->get('chat_icon_open')))->getFileUri());
+      $chat_icon['closed'] = file_create_url(File::load(reset($this->widgetConfig->get('chat_icon_closed')))->getFileUri());
+      $chat_icon['loading'] = file_create_url(File::load(reset($this->widgetConfig->get('chat_icon_loading')))->getFileUri());
+    }
+    return $chat_icon;
   }
 
   /**

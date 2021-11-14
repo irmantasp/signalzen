@@ -23,4 +23,15 @@ color_text_form_text: '#000000'
 color_text_form_input: '#000000'
 color_text_form_title: '#8e9192'
 color_text_form_button: '#ffffff'
+color_online_indicator: '#0fc306'
+horizontal_position: 'right'
+vertical_position: 'bottom'
+horizontal_offset: 0
+vertical_offset: 0
+chat_icon_enabled: 0
+chat_icon_width:
+chat_icon_height:
+chat_icon_open: ''
+chat_icon_closed: ''
+chat_icon_loading: ''
 admin_routes: false

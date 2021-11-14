@@ -80,6 +80,39 @@ signalzen.settings:
     color_text_form_button:
       type: label
       label: 'Form button text color'
+    color_online_indicator:
+      type: label
+      label: 'Online indicator color'
+    horizontal_position:
+      type: label
+      label: 'Horizontal position'
+    vertical_position:
+      type: label
+      label: 'Vertical position'
+    vertical_offset:
+      type: label
+      label: 'Vertical offset (px)'
+    horizontal_offset:
+      type: label
+      label: 'Horizontal offset (px)'
+    chat_icon_enabled:
+      type: label
+      label: 'Custom Chat icon enabled'
+    chat_icon_width:
+      type: label
+      label: 'Custom Chat icon width (px)'
+    chat_icon_height:
+      type: label
+      label: 'Custom Chat icon height (px)'
+    chat_icon_open:
+      - type: label
+        label: 'Custom Chat image (when chat is open)'
+    chat_icon_closed:
+      - type: label
+        label: 'Custom Chat image (when chat is closed)'
+    chat_icon_loading:
+      - type: label
+        label: 'Custom Chat image (when chat is loading)'
     admin_routes:
       type: boolean
       label: 'Display on administration pages?'

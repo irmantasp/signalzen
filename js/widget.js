@@ -25,9 +25,14 @@
 
           let widgetConfig = {
             appId: settings.signalZen.token,
-            colors: settings.signalZen.colors
+            colors: settings.signalZen.colors,
           };
-
+          if (!Array.isArray(settings.signalZen.chatIcon)) {
+            widgetConfig.chatIcon = settings.signalZen.chatIcon
+          }
+          if (!Array.isArray(settings.signalZen.layout)) {
+            widgetConfig.layout = settings.signalZen.layout
+          }
           new SignalZen(widgetConfig).load();
         }
 

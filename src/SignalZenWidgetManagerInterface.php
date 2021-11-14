@@ -27,7 +27,7 @@ interface SignalZenWidgetManagerInterface {
    * Initial chat widget configuration.
    *
    * @return array
-   *   Configuration array containing token and colors.
+   *   Configuration array containing all widget configuration.
    */
   public function getWidgetConfiguration(): array;
 

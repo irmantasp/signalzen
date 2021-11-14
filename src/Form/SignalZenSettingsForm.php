@@ -64,6 +64,7 @@ class SignalZenSettingsForm extends ConfigFormBase {
       'color_text_form_input' => $this->t('Form text color'),
       'color_text_form_title' => $this->t('Form text title color'),
       'color_text_form_button' => $this->t('Form button text color'),
+      'color_online_indicator' => $this->t('Online indicator color')
     ];
   }
 
@@ -94,6 +95,38 @@ class SignalZenSettingsForm extends ConfigFormBase {
         '#required' => TRUE,
       ];
     }
+
+    $form['layout'] = [
+      '#type' => 'details',
+      '#title' => $this->t('Positioning config'),
+    ];
+    $form['layout']['horizontal_position'] = [
+      '#type' => 'select',
+      '#title' => 'Horizontal position',
+      '#default_value' => $config->get('horizontal_position'),
+      '#options' => [ '' => 'Default', 'left' => 'Left', 'right' => 'Right'],
+      '#empty_option' => 'Default',
+    ];
+
+    $form['layout']['vertical_position'] = [
+      '#type' => 'select',
+      '#title' => 'Vertical position',
+      '#default_value' => $config->get('vertical_position'),
+      '#options' => [ '' => 'Default', 'bottom' => 'Bottom', 'top' => 'Top'],
+      '#empty_option' => 'Default',
+    ];
+
+    $form['layout']['horizontal_offset'] = [
+      '#type' => 'number',
+      '#title' => 'Horizontal offset (px)',
+      '#default_value' => $config->get('horizontal_offset'),
+    ];
+
+    $form['layout']['vertical_offset'] = [
+      '#type' => 'number',
+      '#title' => 'Vertical offset (px)',
+      '#default_value' => $config->get('vertical_offset'),
+    ];
 
     $form['display'] = [
       '#type' => 'details',
